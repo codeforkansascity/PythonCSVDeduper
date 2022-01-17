@@ -2,36 +2,11 @@
 
 Example scripts for the [dedupe](https://github.com/dedupeio/dedupe), a library that uses machine learning to perform de-duplication and entity resolution quickly on structured data.
 
-Part of the [Dedupe.io](https://dedupe.io/) cloud service and open source toolset for de-duplicating and finding fuzzy matches in your data. For more details, see the [differences between Dedupe.io and the dedupe library](https://dedupe.io/documentation/should-i-use-dedupeio-or-the-dedupe-python-library.html).
+This is copied from: https://github.com/codeforkansascity/DedupeSQSReaderService  which is forked from another library of examples. https://github.com/dedupeio/dedupe-examples.git
 
-To get these examples:
-```bash
-git clone https://github.com/dedupeio/dedupe-examples.git
-cd dedupe-examples
-```
+The KCDigitalDrive folder has a script to dedupe records in a csv file.
 
-or [download this repository](https://github.com/dedupeio/dedupe-examples/archive/master.zip)
 
-```bash
-cd /path/to/downloaded/file
-unzip master.zip
-cd dedupe-examples
-```
-
-### Setup
-We recommend using [virtualenv](http://virtualenv.readthedocs.io/en/stable/) and [virtualenvwrapper](http://virtualenvwrapper.readthedocs.org/en/latest/install.html) for working in a virtualized development environment. [Read how to set up virtualenv](http://docs.python-guide.org/en/latest/dev/virtualenvs/).
-
-Once you have virtualenvwrapper set up,
-
-```bash
-mkvirtualenv dedupe-examples
-pip install -r requirements.txt
-```
-
-Afterwards, whenever you want to work on dedupe-examples,
-
-```bash
-workon dedupe-examples
 ```
 
 ### [CSV example](https://dedupeio.github.io/dedupe-examples/docs/csv_example.html) - early childhood locations
