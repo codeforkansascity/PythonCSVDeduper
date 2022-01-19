@@ -1,12 +1,23 @@
-# Dedupe Examples
+**The KCDigitalDrive folder has a script to dedupe records in a csv file.**
+The starting point for this code came from example scripts here:  [dedupe](https://github.com/dedupeio/dedupe), a library that uses machine learning to perform de-duplication and entity resolution quickly on structured data.
 
-Example scripts for the [dedupe](https://github.com/dedupeio/dedupe), a library that uses machine learning to perform de-duplication and entity resolution quickly on structured data.
+The python script is used to identify potential duplicate records in a CSV file.  It has been trained for several CSV files, but would require new training if different features are included.
+
+As input, the program expects to receive two AWS S3 buckets, one to read files from, and the other to write output result files to.
+
+Because files from different agencies may have different column names and orders for features (First Name, Last Name, City, etc.), the Mappings.csv file can be used to map the fields in each file to the expected pattern.
+
+The program expects to run in an OS context that has access to an S3 environment.  It will look for files in that S3 environment under the folder name passed in followed by \input, and write files out to a folder \output.
+
+
+
 
 This is copied from: https://github.com/codeforkansascity/DedupeSQSReaderService  which is forked from another library of examples. https://github.com/dedupeio/dedupe-examples.git
 
-The KCDigitalDrive folder has a script to dedupe records in a csv file.
 
 
+
+# Dedupe Examples
 ```
 
 ### [CSV example](https://dedupeio.github.io/dedupe-examples/docs/csv_example.html) - early childhood locations
